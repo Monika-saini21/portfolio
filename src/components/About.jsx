@@ -26,14 +26,14 @@ function About() {
         {/* Title */}
         <div>
           <h1
-            className={`text-3xl sm:text-4xl md:text-6xl font-extrabold bg-gradient-to-r cursor-pointer from-[#8259c4] bg-clip-text text-transparent 
+            className={`text-3xl sm:text-4xl md:text-6xl font-extrabold w-40 md:w-80 bg-gradient-to-r cursor-pointer from-[#8259c4] bg-clip-text text-transparent 
               ${isDark ? "to-[#0a000f]" : "to-white"}
             `}
           >
             Front-End
           </h1>
           <h1
-            className={`text-3xl sm:text-4xl md:text-6xl font-extrabold bg-gradient-to-r cursor-pointer from-[#8259c4] bg-clip-text text-transparent 
+            className={`text-3xl sm:text-4xl md:text-6xl md:w-120 w-60 font-extrabold bg-gradient-to-r cursor-pointer from-[#8259c4] bg-clip-text text-transparent 
               ${isDark ? "to-[#0a000f]" : "to-white"}
             `}
           >
@@ -55,10 +55,16 @@ function About() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center mt-6 gap-5">
+          <a
+              href="https://monikasaini-resume.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
           <button className={`px-8 sm:px-12 py-3 font-semibold text-lg rounded-4xl cursor-pointer  border-2  md:border-[#764eb8] border-white text-white md:border-2 md:text-[#764eb8] hover:bg-[#764eb8] hover:text-white
                ${isDark ? 'md:bg-white bg-[#764eb8]' : 'md:bg-[#0e0111]  bg-[#764eb8]'}`}>
             View My CV
           </button>
+          </a>
 
           {/* Social Icons */}
           <div className="flex gap-4 pl-4 h-9">
