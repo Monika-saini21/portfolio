@@ -56,7 +56,7 @@ function About() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center mt-6 gap-5">
           <a
-              href="https://monikasaini-resume.netlify.app/"
+              href="src/assets/Monika_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
