@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-
+import resume from "../assets/Monika_Resume.pdf";
 import Image from "./Image.jsx";
 function About() {
   const isDark = useSelector((state) => state.darkmode.dark);
@@ -55,11 +55,7 @@ function About() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center mt-6 gap-5">
-          <a
-              href="src/assets/Monika_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a href={resume} target="_blank" rel="noopener noreferrer">
           <button className={`px-8 sm:px-12 py-3 font-semibold text-lg rounded-4xl cursor-pointer  border-2  md:border-[#764eb8] border-white text-white md:border-2 md:text-[#764eb8] hover:bg-[#764eb8] hover:text-white
                ${isDark ? 'md:bg-white bg-[#764eb8]' : 'md:bg-[#0e0111]  bg-[#764eb8]'}`}>
             View My CV
