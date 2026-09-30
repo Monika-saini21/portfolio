@@ -1,20 +1,20 @@
 import { useSelector } from "react-redux";
 import resume from "../assets/Monika_Resume.pdf";
 import Image from "./Image.jsx";
+import Hero from "./Hero.jsx";
 function About() {
   const isDark = useSelector((state) => state.darkmode.dark);
 
   return (
     <>
+    <Hero/>
+    <div className="flex flex-col md:flex-row gap-15  md:gap-0 md:justify-start relative pb-20 md:py-20 px-5 md:px-38">
       <div
         className="
            md:w-full md:max-w-[1150px]  
             w-full 
           flex flex-col 
           gap-3 md:gap-7 
-          absolute 
-          left-0 p-4 md:left-32 
-          top-12 bottom-0 md:top-30 md:bottom-10
           
         "
       >
@@ -41,10 +41,7 @@ function About() {
           </h1>
         </div>
 
-        {/* 👇 Add Image component here */}
-        <div className="flex justify-center md:justify-start">
-          <Image />
-        </div>
+       
 
         {/* Paragraph */}
         <p className="text-base sm:text-lg  cursor-pointer leading-relaxed max-w-xl">
@@ -91,6 +88,12 @@ function About() {
               <i className="bx bxl-gmail text-2xl border-2 cursor-pointer border-[#764eb8] text-[#764eb8] hover:bg-[#764eb8] hover:text-white p-1 rounded-3xl"></i>
             </a>
           </div>
+        
+      </div>
+      </div>
+         {/* 👇 Add Image component here */}
+        <div className="flex justify-center md:justify-start">
+          <Image />
         </div>
       </div>
     </>

@@ -14,7 +14,7 @@ function Button() {
    
     
       
-       <button className=" font-semibold text-3xl  rounded-4xl cursor-pointer relative top-3 md:top-7 md:left-323 left-83 text-[#764eb8] " onClick={() => dispatch(toggleDarkmode())}>
+       <button className=" font-semibold text-3xl  rounded-4xl cursor-pointer text-[#764eb8] " onClick={() => dispatch(toggleDarkmode())}>
       <i
         className= {`${
                 isDark
