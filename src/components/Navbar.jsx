@@ -50,56 +50,54 @@ function Navbar() {
 
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="flex flex-col gap-1.5 rounded-lg p-2 md:hidden"
-        >
-          <span className="h-0.5 w-6 bg-black"></span>
-          <span className="h-0.5 w-6 bg-black"></span>
-          <span className="h-0.5 w-6 bg-black"></span>
-        </button>
+       {/* Mobile Hamburger Button */}
+<button
+  onClick={() => setMenuOpen((prev) => !prev)}
+  className="relative z-50 flex flex-col gap-1.5 rounded-lg p-2 md:hidden"
+>
+  <span className="h-0.5 w-6 bg-black"></span>
+  <span className="h-0.5 w-6 bg-black"></span>
+  <span className="h-0.5 w-6 bg-black"></span>
+</button>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="absolute right-4  top-16 flex w-40 flex-col gap-2 rounded-2xl border bg-white p-3 text-black shadow-lg md:hidden">
+{/* Mobile Menu */}
+{menuOpen && (
+  <div className="absolute right-4 top-16 z-50 flex w-40 flex-col gap-2 rounded-2xl border bg-white p-3 text-black shadow-lg md:hidden">
 
-            <Link
-              to="/"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
-            >
-              Home
-            </Link>
+    <Link
+      to="/"
+      onClick={() => setMenuOpen(false)}
+      className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
+    >
+      Home
+    </Link>
 
-            
-            <Link
-              to="/about"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
-            >
-              About
-            </Link>
+    <Link
+      to="/about"
+      onClick={() => setMenuOpen(false)}
+      className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
+    >
+      About
+    </Link>
 
+    <Link
+      to="/skills"
+      onClick={() => setMenuOpen(false)}
+      className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
+    >
+      Skills
+    </Link>
 
-            <Link
-              to="/skills"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
-            >
-              Skills
-            </Link>
+    <Link
+      to="/projects"
+      onClick={() => setMenuOpen(false)}
+      className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
+    >
+      Projects
+    </Link>
 
-            <Link
-              to="/projects"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
-            >
-              Projects
-            </Link>
-
-          </div>
-        )}
+  </div>
+)}
       </div>
 
       {/* Button */}

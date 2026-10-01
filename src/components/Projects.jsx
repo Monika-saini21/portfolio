@@ -110,7 +110,7 @@ function Projects() {
         >
           My Projects
         </h1>
-        <p className="md:text-lg text-sm text-wrap md:w-170 mb-10 text-white w-80 text-center">
+        <p className="md:text-lg text-sm text-wrap md:w-170 mb-10 w-80 text-center">
           Some of the most interesting projects that I made. Feel free to
           explore my Github for more projects.
         </p>
