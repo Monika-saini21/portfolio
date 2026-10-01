@@ -3,8 +3,8 @@ function  Contect(){
         <>
         <div className="bg-black md:flex-row flex flex-col mt-20 w-full md:w-auto justify-center md:justify-center">
         <div className=" md:w-150 md:pt-20  p-4 pt-9">
-             <h1 className="md:text-5xl text-4xl w-60 font-extrabold cursor-pointer bg-gradient-to-r from-[#764eb8] to-white bg-clip-text text-transparent">
-  About Me
+             <h1 className="md:text-5xl text-4xl w-80 font-extrabold cursor-pointer bg-gradient-to-r from-[#764eb8] to-white bg-clip-text text-transparent">
+  Monika saini
 </h1>
 <p className="text-wrap md:text-xl text-sm text-white mt-6 cursor-pointer">As a passionate frontend developer, I help individuals and businesses transform their ideas into unique web projects.My goal is to bring ideas to life through interactive and engaging digital solutions.</p>
         </div>
@@ -28,7 +28,7 @@ function  Contect(){
                 
         </div>
         </div>
-        <p className="text-center p-10 text-white bg-black">© 2025 Monika Saini. All rights reserved.</p>
+        <p className="text-center p-10 text-white bg-black">© 2026 Monika Saini. All rights reserved.</p>
         </>
     )
 }

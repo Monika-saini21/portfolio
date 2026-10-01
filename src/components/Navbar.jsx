@@ -6,9 +6,9 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex md:flex-row flex-col md:justify-end  md:gap-46 items-end gap-3 md:items-center  py-6 sm:pt-9">
+    <nav className="flex md:flex-row flex-col md:justify-end mx-4 md:gap-46 items-end gap-3 md:items-center  py-6 sm:pt-9">
 
-      <div className="relative flex w-full max-w-[820px] items-center justify-between rounded-full border border-gray-200 bg-white px-5 py-2 shadow-lg md:px-8">
+      <div className="relative flex w-full  max-w-[820px] items-center justify-between rounded-full border border-gray-200 bg-white px-5 py-2 shadow-lg md:px-8">
 
         {/* Logo */}
         <h1 className="text-lg font-bold text-black sm:text-xl">
@@ -20,31 +20,33 @@ function Navbar() {
 
           <Link
             to="/"
-            className="rounded-full px-4 py-2 hover:bg-black hover:text-white"
+            className="rounded-full px-4 py-2 hover:bg-[#8259c4] hover:text-white"
           >
             Home
           </Link>
 
           <Link
+            to="/about"
+            className="rounded-full px-4 py-2 hover:bg-[#8259c4] hover:text-white"
+          >
+            About
+          </Link>
+
+          <Link
             to="/skills"
-            className="rounded-full px-4 py-2 hover:bg-black hover:text-white"
+            className="rounded-full px-4 py-2 hover:bg-[#8259c4] hover:text-white"
           >
             Skills
           </Link>
 
           <Link
             to="/projects"
-            className="rounded-full px-4 py-2 hover:bg-black hover:text-white"
+            className="rounded-full px-4 py-2 hover:bg-[#8259c4] hover:text-white"
           >
             Projects
           </Link>
 
-          <Link
-            to="/contact"
-            className="rounded-full px-4 py-2 hover:bg-black hover:text-white"
-          >
-            Contact
-          </Link>
+          
 
         </div>
 
@@ -60,7 +62,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="absolute right-4 top-16 flex w-40 flex-col gap-2 rounded-2xl border bg-white p-3 text-black shadow-lg md:hidden">
+          <div className="absolute right-4  top-16 flex w-40 flex-col gap-2 rounded-2xl border bg-white p-3 text-black shadow-lg md:hidden">
 
             <Link
               to="/"
@@ -69,6 +71,16 @@ function Navbar() {
             >
               Home
             </Link>
+
+            
+            <Link
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
+            >
+              About
+            </Link>
+
 
             <Link
               to="/skills"
@@ -84,14 +96,6 @@ function Navbar() {
               className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
             >
               Projects
-            </Link>
-
-            <Link
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-2 hover:bg-black hover:text-white"
-            >
-              Contact
             </Link>
 
           </div>

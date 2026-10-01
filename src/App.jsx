@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contect from "./components/Contect";
 import Navbar from "./components/Navbar";
+import Aboutme from "./components/Aboutme.jsx";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           element={
             <>
               <About/>
+              <Aboutme/>
               <Skills />
               <Projects />
              
@@ -35,7 +37,7 @@ function App() {
 
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contect />} />
+        <Route path="/about" element={<Aboutme />} />
       </Routes>
 
       {/* Footer har route par show hoga */}
